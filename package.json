@@ -4,7 +4,8 @@
   "description": "react-模板",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node build/build.js",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,25 @@
   "bugs": {
     "url": "https://github.com/wangyunlong0418/react-template/issues"
   },
-  "homepage": "https://github.com/wangyunlong0418/react-template#readme"
+  "homepage": "https://github.com/wangyunlong0418/react-template#readme",
+  "dependencies": {
+    "mobx": "^5.5.0",
+    "mobx-react": "^5.2.8",
+    "react": "^16.6.0",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
+  }
 }
